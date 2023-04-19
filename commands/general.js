@@ -386,9 +386,7 @@ cmd({
 
 cmd({
 
-            pattern: "menu",
-            
-            alias: ["මෙනු","cmd","help"],
+            pattern: "mjakageksjsgwusksgaisjsgajhshshshshehbenu",
 
             desc: "(menu cmdlist).",
 
@@ -424,8 +422,8 @@ cmd({
 │.song
 │.video
 │.apk
-│.docsong (not working fix soon)
-│.docvideo (not working fix soon)
+│.docsong 
+│.docvideo
 │.fb
 │.tiktok
 │.img

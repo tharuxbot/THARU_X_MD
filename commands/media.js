@@ -346,7 +346,7 @@ cmd({
 
 cmd({
 
-            pattern: "video",
+            pattern: "testvideo",
 
             desc: "video dl",
 
@@ -364,9 +364,9 @@ cmd({
             let anu = search.videos[0];
             if (!text) return     
             
-const tvideo = await fetchJson(`https://darkalphaxteam-api.cyclic.app/api/download/ytmp4?url=${anu.url}&apikey=prabath`)
+const tvideo = await fetchJson(`https://saipulanuar.ga/api/download/ytmp4-v2?url=${anu.url}`)
 
-const videolink = tvideo.download
+const videolink = tvideo.result.url
 
             citel.reply (`📽️ ━━━━━━━━━━ *𝗩𝗜𝗗𝗘𝗢_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 📽️\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n🖇️ *Url:* ${anu.url}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}`);
             return Void.sendMessage(citel.chat, {
@@ -391,7 +391,7 @@ const videolink = tvideo.download
     
     cmd({
 
-            pattern: "song",
+            pattern: "testsong",
 
             desc: "song dl",
 
